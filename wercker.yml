@@ -1,4 +1,4 @@
-box: debian:stable-slim
+box: debian
 init:
   steps:
    - fly1tkg/git-commit-message@0.0.2
