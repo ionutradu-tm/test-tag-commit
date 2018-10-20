@@ -8,8 +8,8 @@ init:
 deploy:
   steps:
    - iradu/git-tag-commit@0.0.3:
-       - message: $WERCKER_GIT_COMMIT_MESSAGE
-   -script:
+       message: $WERCKER_GIT_COMMIT_MESSAGE
+   - script:
      name: Print WERCKER_GIT_COMMIT_MESSAGE
      code: |
        echo $WERCKER_GIT_COMMIT_MESSAGE
