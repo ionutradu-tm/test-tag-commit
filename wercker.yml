@@ -5,4 +5,4 @@ init:
 deploy:
   steps:
    - fly1tkg/git-commit-message@0.0.2
-   - iradu/git-tag-commit
+   - iradu/git-tag-commit@0.0.2
