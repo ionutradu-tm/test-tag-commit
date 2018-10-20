@@ -2,5 +2,3 @@ box: debian:stable-slim
 init:
   steps:
    - fly1tkg/git-commit-message@0.0.2
-   - iradu/git-add-commit
-      message: $WERCKER_GIT_COMMIT_MESSAGE
