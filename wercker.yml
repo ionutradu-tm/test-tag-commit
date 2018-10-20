@@ -1,8 +1,11 @@
-box: debian
+box: 
+  id: essentra/docker-wercker-tools
+  username: $DOCKER_REPO_USER
+  password: $DOCKER_REPO_PASSWORD
 init:
   steps:
    - fly1tkg/git-commit-message@0.0.2
 deploy:
   steps:
-   - fly1tkg/git-commit-message@0.0.2
-   - iradu/git-tag-commit@0.0.2
+   - iradu/git-tag-commit@0.0.3
+     message: $WERCKER_GIT_COMMIT_MESSAGE
