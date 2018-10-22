@@ -8,9 +8,16 @@ init:
 deploy:
   steps:
    - fly1tkg/git-commit-message@0.0.2
+    - add-ssh-key:
+        keyname: GIT_KEY
+    - add-to-known_hosts:
+        hostname: $GIT_HOST
+        fingerprint: $GIT_FINGERPRINT
+        type: $GIT_FINGERPRINT_TYPE
    - iradu/git-tag-commit@0.0.4:
        message: $WERCKER_GIT_COMMIT_MESSAGE
        commit: cdac988453357d970c9752bde39f24dd9475b28aa
+       user: iradu
    - script:
      name: Print WERCKER_GIT_COMMIT_MESSAGE
      code: |
