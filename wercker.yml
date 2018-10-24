@@ -13,7 +13,7 @@ deploy:
   steps:
     - fly1tkg/git-commit-message@0.0.2
     - add-ssh-key:
-        keyname: GIT_KEY
+        keyname: $GIT_KEY
     - add-to-known_hosts:
         hostname: $GIT_HOST
         fingerprint: $GIT_FINGERPRINT
