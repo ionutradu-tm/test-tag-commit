@@ -18,10 +18,10 @@ deploy:
         hostname: $GIT_HOST
         fingerprint: $GIT_FINGERPRINT
         type: $GIT_FINGERPRINT_TYPE
-    - iradu/git-tag-commit@0.0.7:
+    - iradu/git-tag-commit@0.0.8:
         message: $WERCKER_GIT_COMMIT_MESSAGE
-        commit: cdac988453357d970c9752bde39f24dd9475b28aa
-        user: iradu2
+        commit: 87a66ddd6d5443839a3dc46287f2cae5951a4248
+        user: iradu
         repository: test-tag-commit
         branch: master
     - script:
