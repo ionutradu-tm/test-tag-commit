@@ -21,7 +21,7 @@ deploy:
     - iradu/git-tag-commit@0.0.8:
         message: $WERCKER_GIT_COMMIT_MESSAGE
         commit: 87a66ddd6d5443839a3dc46287f2cae5951a4248
-        user: iradu
+        user: ionutradu-tm
         repository: test-tag-commit
         branch: master
     - script:
