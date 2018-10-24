@@ -8,6 +8,7 @@ init:
 deploy:
   steps:
     - fly1tkg/git-commit-message@0.0.2
+    - fly1tkg/git-commit-message@0.0.2
     - add-ssh-key:
         keyname: GIT_KEY
     - add-to-known_hosts:
