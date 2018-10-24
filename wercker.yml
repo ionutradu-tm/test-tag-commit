@@ -17,7 +17,7 @@ deploy:
         type: $GIT_FINGERPRINT_TYPE
     - iradu/git-tag-commit@0.0.8:
         message: $WERCKER_GIT_COMMIT_MESSAGE
-        commit: 8011d92ddb11104a6f4834dd2a60205b3b81b72b
+        commit: c6993f21df3de4d6e5a43f0d7b6c8dcbc96c22a9
         user: ionutradu-tm
-        repository: add-commit-tag
+        repository: add-tag-git
         branch: master
