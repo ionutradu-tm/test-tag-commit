@@ -6,10 +6,6 @@ init:
   steps:
    - fly1tkg/git-commit-message@0.0.2
 deploy:
-  box:
-    id: essentra/docker-wercker-tools
-    username: $DOCKER_REPO_USER
-    password: $DOCKER_REPO_PASSWORD
   steps:
     - fly1tkg/git-commit-message@0.0.2
     - add-ssh-key:
