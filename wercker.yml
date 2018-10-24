@@ -24,7 +24,3 @@ deploy:
         user: ionutradu-tm
         repository: test-tag-commit
         branch: master
-    - script:
-        name: Print WERCKER_GIT_COMMIT_MESSAGE
-        code: |
-          echo $WERCKER_GIT_COMMIT_MESSAGE
