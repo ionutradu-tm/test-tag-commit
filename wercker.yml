@@ -14,7 +14,7 @@ deploy:
         hostname: $GIT_HOST
         fingerprint: $GIT_FINGERPRINT
         type: $GIT_FINGERPRINT_TYPE
-    - iradu/git-tag-commit:
+    - iradu/git-tag-commit@0.0.9:
         message: $WERCKER_GIT_COMMIT_MESSAGE
         commit: c6993f21df3de4d6e5a43f0d7b6c8dcbc96c22a9
         user: ionutradu-tm
