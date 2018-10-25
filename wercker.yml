@@ -18,5 +18,5 @@ deploy:
         message: $WERCKER_GIT_COMMIT_MESSAGE
         commit: 58bf888f1e85ce564438e7c3cdd6403c58dd2ece
         user: ionutradu-tm
-        repository: add-tag-git
+        repository: test-tag-commit
         branch: master
