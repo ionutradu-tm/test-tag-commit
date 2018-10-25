@@ -8,7 +8,6 @@ init:
 deploy:
   steps:
     - fly1tkg/git-commit-message@0.0.2
-    - fly1tkg/git-commit-message@0.0.2
     - add-ssh-key:
         keyname: GIT_KEY
     - add-to-known_hosts:
@@ -17,7 +16,7 @@ deploy:
         type: $GIT_FINGERPRINT_TYPE
     - iradu/git-tag-commit:
         message: $WERCKER_GIT_COMMIT_MESSAGE
-        commit: c6993f21df3de4d6e5a43f0d7b6c8dcbc96c22a9
+        commit: 58bf888f1e85ce564438e7c3cdd6403c58dd2ece
         user: ionutradu-tm
         repository: add-tag-git
         branch: master
